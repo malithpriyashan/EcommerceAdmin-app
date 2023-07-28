@@ -1,3 +1,4 @@
+#EcommerceAdmin-app
 This is the admin site I created in order to handle the ecommerce frontend
 application. The login page of this site has been created with Nextauth.js, and
 a user can log in to this with their Google account. Using this site, you can
