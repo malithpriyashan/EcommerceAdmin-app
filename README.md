@@ -1,3 +1,14 @@
+# EcommerceAdmin-app
+This is the admin site I created in order to handle the ecommerce frontend
+application. The login page of this site has been created with Nextauth.js, and
+a user can log in to this with their Google account. Using this site, you can
+check different stats about your business, like the number of orders, the
+details of every order, and your revenue for the day, week, or month. You can
+add multiple different products and product images, you can add different
+categories and specify their properties, you can select products to be featured
+on the ecommerce app front-end, and specify the shipping prices. If you need
+more than one admin, you can add additional admins if you wish to.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
