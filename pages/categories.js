@@ -133,7 +133,7 @@ function Categories({ swal }) {
           <button
             onClick={addProperty}
             type="button"
-            className="btn-default text-sm mb-2"
+            className="btn-default  text-sm mb-2"
           >
             Add new property
           </button>

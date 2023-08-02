@@ -123,7 +123,9 @@ export default function ProductForm({
         {categories.length > 0 &&
           categories.map((c) => <option value={c._id}>{c.name}</option>)}
       </select>
-      {errors.category && <p>Please select a category</p>}
+      {errors.category && (
+        <p className="form-error">Please select a category</p>
+      )}
       {categoriesLoading && <Spinner />}
       {propertiesToFill.length > 0 &&
         propertiesToFill.map((p) => (
@@ -164,7 +166,7 @@ export default function ProductForm({
             <Spinner />
           </div>
         )}
-        <label className="w-24 h-24 cursor-pointer text-center flex flex-col items-center justify-center text-sm gap-1 text-primary rounded-sm bg-white shadow-sm border border-primary">
+        <label className="w-24 h-24 cursor-pointer text-center flex flex-col items-center justify-center text-sm gap-1 text-white rounded-sm bg-pink-700 shadow-sm ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -197,7 +199,7 @@ export default function ProductForm({
         {...register("price", { required: true })}
         onChange={(ev) => setPrice(ev.target.value)}
       />
-      {errors.price && <p>Please put a decimal value</p>}
+      {errors.price && <p className="form-error">Please put a decimal value</p>}
       <button type="submit" className="btn-primary">
         Save
       </button>
